@@ -1,0 +1,38 @@
+*{
+		margin: 0; padding: 0; box-sizing: border-box;
+	}
+	header{
+		width: 100%;
+		height: 300px;
+		background:#d2dae2;
+	}
+	a{
+		text-decoration: none;
+		color: white;
+	}
+	a:hover{text-decoration: none; color: #4bcffa;}
+	.footer_style{
+
+		color:white;
+	}
+	@media(max-width: 768px){
+	li{
+		list-style: none;
+	}
+	.d-flex span{
+		display: none;
+	}
+}
+.d-flex div{
+text-align: center;
+border-right: 1px solid grey;
+border-top: 1px solid grey;
+}
+.d-flex div:last-child{
+
+border-right: none;
+}
+.footer_style{
+	margin-top: 50px;
+}
+

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+{%load staticfiles%}
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{%static "css/footrr.css"%}">
+<link rel="stylesheet" href="{%static "css/myhelper.css"%}">
+<link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+
+
+  <link rel="stylesheet" type="text/css" href="{%static "css/form.css"%}">
+<style type="text/css">
+
+
+</style>
+</head>
+<body>
+	<div class="bgimgg">
+	{%  include 'pages/nav.html' %}
+	</div>
+
+<section class="container ourservice text-center">
+		<h1>SERVICES</h1>
+	
+		<div class="row rowsetting">
+			<div class="col-lg-3 col-md-3 col-sm-3 d-block m-auto">
+				<div class="imgsetting d-block m-auto bg-warning">
+					<i class="fa fa-graduation-cap text-white fa-3x" aria-hidden="true"></i>
+				</div>
+				<h2>Admission Procedure</h2>
+				<p>The student should complete the age of 3 and 1/2 years on 31st March of the year for the admission to class nursery the age for admission to other classes</p>
+			</div>
+
+			<div class="col-lg-3 col-md-3 col-sm-3 d-block m-auto">
+				<div class="imgsetting d-block m-auto bg-warning">
+					<i class="fa fa-university text-white fa-3x" aria-hidden="true"></i>
+				</div>
+				<h2>Rules & Regulations</h2>
+				<p>Leave to a student for absence is granted only on an I application to The principal, through class Teacher Submitted in Time definitely the same day,</p>
+			</div>
+
+			<div class="col-lg-3 col-md-3 col-sm-3 d-block m-auto">
+				<div class="imgsetting d-block m-auto bg-warning">
+					<i class="fa fa-child text-white fa-3x" aria-hidden="true"></i>
+				</div>
+				<h2>Aim of the school</h2>
+				<p>The main aim of the school is to provide comprehensive educational manner ofspeaking system to impart impulse to the student's physical growth</p>
+			</div>
+
+			<div class="col-lg-3 col-md-3 col-sm-3 d-block m-auto">
+				<div class="imgsetting d-block m-auto bg-warning">
+					<i class="fa fa-grav text-white fa-3x" aria-hidden="true"></i>
+				</div>
+				<h2>School Activities</h2>
+				<p>Children are inquisitive by nature. They are extremely curious lot, always eager to know about everything around them, therefore besides academics,</p>
+			</div>
+		</div>
+	</section>
+
+
+
+		<!-- Start Login page  -->
+<div id="id01" class="modal">
+  <form class="modal-content animate" action="hotelsignup.php" method="post">
+    <div class="imgcontainer">
+	  <h2> Login</h2>
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container2">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit" class="btn32">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container2" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn btn32">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<!-- End Login page  -->
+
+
+
+<!-- Start Singup page  -->
+
+<div id="id02" class="modal">
+  <form class="modal-content animate" action="hotelsignup.php" method="post">
+  <div class="imgcontainer">
+	  <h2>Sign Up</h2>
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+    <div class="container2">
+       <label for="Name"><b>Name</b></label>
+      <input type="text" placeholder="Enter Name" name="name" required>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn1 btn32">Cancel</button>
+        <button type="submit"  class="btn32 signupbtn1">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+<!-- End Singup page  -->
+
+<section class="aboutus">
+  <div class="container">
+    <div class="aim">
+      <div class="alert alert-info bg-dark text-white" role="alert">Aim of the school</div>
+      <div class="jumbotron">
+        <p>The main aim of the school is to provide comprehensive educational manner ofspeaking system to impart impulse to the student's physical growth as well as his/her scientific thinking, cemotional, spiritual and moral development</p>
+<h3>Salient Features of Divine Sainik School</h3>
+<p>Having grown up in a swift changing competitive world, school purposed to impart the best education in Varanasi district which might prove panacea for students. The school has lit a flame of modern, traditional and technological education amongst its students. It has its own following countenance.</p>
+<p><i class="fa fa-hand-o-right" aria-hidden="true"></i> </p>
+<p><i class="fa fa-hand-o-right" aria-hidden="true"></i>  Spacious Class Rooms with standardized infrastructure. </p>
+<p><i class="fa fa-hand-o-right" aria-hidden="true"></i>  The number of students in each class is limited so that the teacher can give individual attention to each student. </p>
+<p><i class="fa fa-hand-o-right" aria-hidden="true"></i>   The school is resolved to develop tendency of learning in all students by asking questions and black-board work of all students in particular D.S.S. assures education without coaching or tution.</p>
+<p><i class="fa fa-hand-o-right" aria-hidden="true"></i>   Paying much attention to all subjects, classes will be allotted to expert teachers in particular subjects.</p>
+<p><i class="fa fa-hand-o-right" aria-hidden="true"></i>   Large, well stocked libraries, with latest encyclopaedia, reference books, classical literature and other books of special to the children age group, covering wide range in Science, Art, History, Geography and culture, both in English and Hindi. Encouraging the habit of reading amongst the students, books and magazines are brought on weekly basis.
+</p>
+<p><i class="fa fa-hand-o-right" aria-hidden="true"></i>   The well-faciliated science lab is filled with the latest and upto date equipments.</p>
+<p><i class="fa fa-hand-o-right" aria-hidden="true"></i>   Computer lab facilitates in enhancing computing skills.</p>
+<p><i class="fa fa-hand-o-right" aria-hidden="true"></i>   Sports is given due importance and school gives coaching facilities to all its students in Table tennis, tennis, basketball, Volley-ball and cricket, foot-ball etc.</p>
+<p><i class="fa fa-hand-o-right" aria-hidden="true"></i>   Scouts and Guides and N.C.C.</p>
+<p><i class="fa fa-hand-o-right" aria-hidden="true"></i>   General Awareness, communication skills, discipline, conduct are main motive of the school activities.</p>
+<p><i class="fa fa-hand-o-right" aria-hidden="true"></i>   For scholastic achievement regular classroom tests, periodic assessment and terminal examinations are taken.</p>
+</div>
+
+    </div>
+
+
+
+
+
+
+    <div class="addmision">
+      <div class="alert alert-info bg-dark text-white" role="alert">Admission Procedure</div>
+      <div class="jumbotron">
+<p><i class="fa fa-hand-o-right" aria-hidden="true"></i>   The student should complete the age of 3 and 1/2 years on 31st March of the year for the admission to class nursery the age for admission to other classes will be regulated accordingly.
+</p>
+<p><i class="fa fa-hand-o-right" aria-hidden="true"></i>   The admission test will be notified at the time of submission of the admission form.
+</p>
+
+<p><i class="fa fa-hand-o-right" aria-hidden="true"></i>   Except class nursery to fifth rest of all prospective student from class VI to onward will have toappear for an entrance test consisting of questions test his knowledge of English, Maths, Hindi and G.K. as per the requirement of the class for which admission is sought.
+</p>
+<p><i class="fa fa-hand-o-right" aria-hidden="true"></i>   For semione to 9th admission is based on written assessment of the student.
+</p>
+<p><i class="fa fa-hand-o-right" aria-hidden="true"></i>   List of successful candidates are put on the school notice board on fixed time and admission will be allowed successful candidates after submits the Transfer Certificate (TC) of the previous schools along with the Progress Report of the last examination passed.
+</p>
+<p><i class="fa fa-hand-o-right" aria-hidden="true"></i>   The principal arranges the admission test and his/her decision on the admission will be final.
+</p>
+<p><i class="fa fa-hand-o-right" aria-hidden="true"></i>   Once the admission fees is paid it will not be returned under any circumstances.
+</p>
+<p><i class="fa fa-hand-o-right" aria-hidden="true"></i> </p>
+
+      </div>
+
+    </div>
+
+
+
+
+    <div class="activities">
+      <div class="alert alert-info bg-dark text-white" role="alert">School Activities</div>
+      <div class="jumbotron">
+        <p> Divine Sainik School provides different activities for better development of your child. The activities are :
+
+</p>
+<h3>Co-Curicular activities</h3>
+<p>Children are inquisitive by nature. They are extremely curious lot, always eager to know about everything around them, therefore besides academics, in order to ensure development of curiosity and personality the school imparts ample opportunities to students in a wide variety of hobby and activity in quiescent surrounding as music and dance, art and craft, painting and drawing, science exhibition, knowledge quotient.
+
+</p>
+<h3>Inter Class Activities
+</h3>
+<p>The school has been divided into to groups namely Jr. Group (nursery to fifth) and Sr. Group (Classes VI to onward) to make education more meaningful socially acceptable and for an all round growth and development such as physical, mental, emotional, spiritual etc. Inter class Literacy Activities are organised on every Wednesday and Saturday of the week. The Inter Class Activities help in maintaining discipline in the school.
+
+</p>
+<h3>Activities During The Session
+</h3>
+<p>Literary Activities- Various Inter Class Activities such as : Debate, Extempore, Declamation, Quiz Competition, Essay Writing Competition, Art Competition and Assembly Song of Competition are organised every month. G Inter Class Matches-Various Inter Class Matches such as Foot-ball, Handball, Khokho, Chess and Carrom etc. are organised every month.
+
+</p>
+</div>
+
+    </div>
+
+
+
+
+		    <div class="rules">
+		      <div class="alert alert-info bg-dark text-white" role="alert">Rules & Regulations</div>
+		      <div class="jumbotron">
+						<p><i class="fa fa-hand-o-right" aria-hidden="true"></i>  A pupil will be eligible to appear in the session ending I Examination if he/she has completed 90% attendance.
+ </p>
+						<p><i class="fa fa-hand-o-right" aria-hidden="true"></i>  Leave to a student for absence is granted only on an I application to The principal, through class Teacher Submitted in Time definitely the same day, rarely the next day) duly attested by the Parent/Guardian.
+ </p>
+						<p><i class="fa fa-hand-o-right" aria-hidden="true"></i>   In case of illness, medical certificate must be attached with the application. Long absence except in case of illness should discouraged.
+</p>
+						<p><i class="fa fa-hand-o-right" aria-hidden="true"></i>   The name of the student will be struck of the rolls of the school if he/she is absent for more than a week continuous without sanction of leave.
+</p>
+						<p><i class="fa fa-hand-o-right" aria-hidden="true"></i>   Before leave inform and give the application.
+</p>
+						<p><i class="fa fa-hand-o-right" aria-hidden="true"></i>   Fee will be charged monthly.
+</p>
+						<p><i class="fa fa-hand-o-right" aria-hidden="true"></i>   Fee will be paid in advance 15th of every month.
+</p>
+						<p><i class="fa fa-hand-o-right" aria-hidden="true"></i>   Fee can also be paid with Late Payment of Rs.10/- on the last working day of the month. There after the name will be struck off the register Readmission can be taken on payment of Rs.50/- with the approval the principal.
+</p>
+						<p><i class="fa fa-hand-o-right" aria-hidden="true"></i>   If a child is with drawn in the mid-session six month's fees will be charged.
+</p>
+
+
+
+		</div>
+
+		    </div>
+
+
+
+
+				<div class="ourtraining">
+					<div class="alert alert-info bg-dark text-white" role="alert">Ourtraining</div>
+					<div class="jumbotron">
+				<p>Divine Sainik School provides different trainings for better future of your child. The trainings are :
+
+</p>
+				<h3>N.C.C. Training
+</h3>
+	<p>Youths are future architects of India on whose shoulders lies the responsibility of conserving all that is the best in Indian culture. We put stress upon the need to awake the youth in Varanasi and' to involve them in national building activities, which needs to strengthen a system of value education that would avoid violence, fanaticism and fatalism, the school provide N.C.C. training to the students. Aim of the N.C.C. Training necessary:
+
+</p>
+						<p><i class="fa fa-hand-o-right" aria-hidden="true"></i>   To develop qualities of character like courage, I commandership, discipline, leadership, secular outlook spirit of adventure and sportsmanship and ideals of selfless-service among youths to make them useful citizens.
+</p
+<p><i class="fa fa-hand-o-right" aria-hidden="true"></i>   To create human resources of organised, trained and motivated youths, to provide leadership in all walks of life including the armed forces and being always available for services of the nation.
+</p>
+<p><i class="fa fa-hand-o-right" aria-hidden="true"></i>   To create suitable environment to motivate the youths of the nation to take up a career in the armed forces.
+</p>
+
+<h3>Scouts and Guidelines Trainings</h3>
+<p>   We gives training of Scout & Guide to students. The object of giving training is to develop character and personality, self confidence, to build up physique and courage and to teach those subjects which will be useful during an ' emergency and in day to day life.
+
+</P>
+
+
+
+		</div>
+
+				</div>
+
+
+
+
+
+
+  </div>
+
+</section>
+
+{%  include 'pages/footer.html' %}
+
+
+</body>
+</html>

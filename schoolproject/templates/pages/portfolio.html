@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+{%load staticfiles%}
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{%static "css/footrr.css"%}">
+<link rel="stylesheet" href="{%static "css/myhelper.css"%}">
+<link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="{%static "css/form.css"%}">
+<style type="text/css">
+.mytext{
+  padding:10px;
+
+}
+.mytext h3{
+  margin-top:30px;
+}
+.bodyy{
+			margin: 0;
+			padding: 0;
+		}
+		.containerr{
+			width: 90%;
+			margin:10px auto;
+		}
+		.portfolio-menu{
+			text-align: center;
+		}
+		.portfolio-menu ul li{
+			display: inline-block;
+			margin: 0px;
+			list-style: none;
+			padding: 10px 15px;
+			border:1px solid tomato;
+			cursor: pointer;
+			-webkit-transition:all .5s ease;
+			-moz-transition:all .5s ease;
+			-o-transition: all .5s ease;
+			transition: all .5s ease;
+		}
+		.portfolio-menu ul li:hover{
+			background: tomato;
+			color:#ffffff;
+
+		}
+		.portfololio-item{
+			width: 100%;
+		}
+		.portfolio-item .item{
+			width: 303px;
+			float: left;
+			margin-bottom: 10px;
+		}
+		li .acitive{
+			background: tomato;
+			color: #ffffff;
+		}
+		.portfolio-item img{
+			width: 300px;
+			height: 250px;
+		}
+
+</style>
+</head>
+<body>
+	<div class="bgimgg">
+	{%  include 'pages/nav.html' %}
+</div>
+
+<section>
+  <div class="container-fluid p-3 my-3 bg-warning text-white text-center mytext">
+
+  <h3>Photo Gallery</h3>
+  <p>Divine Sainik School, Lahartara, D.L.W Road, Varanasi, UP, India</p>
+</div>
+
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js
+
+"></script>
+
+	<script src="{%static "js/isotope.pkgd.min.js"%}"></script>
+
+
+	<script>
+		$('.portfolio-item').isotope({
+			itemSelector:'.item',
+			layoutMode:'fitRows'
+		});
+
+		$('.portfolio-menu ul li').click(function(){
+			$('.portfolio-menu ul li').removeClass('active');
+			$(this).addClass('active');
+
+			var selector=$(this).attr('data-filter');
+			$('.portfolio-item').isotope({
+				filter:selector
+			});
+			return false;
+		});
+	</script>
+
+
+
+
+
+<section class="bodyy">
+  <div class="containerr">
+		<div class="portfolio-menu">
+			<ul>
+				<li class="active" data-filter="*">All</li>
+				<li  data-filter=".agust">15th-Agust</li>
+				<li  data-filter=".sports">Annual sports</li>
+				<li  data-filter=".function">Annual function</li>
+
+
+			</ul>
+		</div>
+
+		<div class="portfolio-item">
+
+			<div class="item agust">
+				<img src="{%static "images/a1.jpg"%}">
+			</div>
+			<div class="item agust">
+			<img src="{%static "images/a2.jpg"%}">
+			</div>
+			<div class="item agust">
+			<img src="{%static "images/a3.jpg"%}">
+			</div>
+			<div class="item agust">
+			<img src="{%static "images/a4.jpg"%}">
+			</div>
+
+			<div class="item function">
+			<img src="{%static "images/a5.jpg"%}">
+			</div>
+			<div class="item function">
+			<img src="{%static "images/a6.jpg"%}">
+			</div>
+			<div class="item function">
+			<img src="{%static "images/a7.jpg"%}">
+			</div>
+			<div class="item sports">
+			<img src="{%static "images/a8.jpg"%}">
+			</div>
+			<div class="item sports">
+			<img src="{%static "images/a9.jpg"%}">
+			</div>
+			<div class="item sports">
+			<img src="{%static "images/a10.jpg"%}">
+			</div>
+
+
+		</div>
+	</div>
+
+
+</section>
+
+
+		<!-- Start Login page  -->
+<div id="id01" class="modal">
+  <form class="modal-content animate" action="hotelsignup.php" method="post">
+    <div class="imgcontainer">
+	  <h2> Login</h2>
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container2">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit" class="btn32">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container2" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn btn32">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<!-- End Login page  -->
+
+
+
+<!-- Start Singup page  -->
+
+<div id="id02" class="modal">
+  <form class="modal-content animate" action="hotelsignup.php" method="post">
+  <div class="imgcontainer">
+	  <h2>Sign Up</h2>
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+    <div class="container2">
+       <label for="Name"><b>Name</b></label>
+      <input type="text" placeholder="Enter Name" name="name" required>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn1 btn32">Cancel</button>
+        <button type="submit"  class="btn32 signupbtn1">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+<!-- End Singup page  -->
+
+
+
+
+
+
+
+
+
+</body>
+</html>

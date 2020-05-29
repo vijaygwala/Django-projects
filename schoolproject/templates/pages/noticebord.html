@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+{%load staticfiles%}
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{%static "css/footrr.css"%}">
+<link rel="stylesheet" href="{%static "css/myhelper.css"%}">
+<link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+
+
+  <link rel="stylesheet" type="text/css" href="{%static "css/form.css"%}">
+<style type="text/css">
+.comb img{
+  float:left;
+}
+.jumbo{
+  width:1000px;
+  margin-left:20px;
+  height:300px;
+}
+.jumbo h3{
+  color:#3071a9;
+}
+.jumbo h4{
+  color;
+}
+
+</style>
+</head>
+<body>
+	<div class="bgimgg">
+	{%  include 'pages/nav.html' %}
+</div>
+
+<section class="container ourservices text-center">
+		<h1>SERVICES</h1>
+	
+		<div class="row rowsetting">
+			<div class="col-lg-3 col-md-3 col-sm-3 d-block m-auto">
+				<div class="imgsetting d-block m-auto bg-warning">
+					<i class="fa fa-graduation-cap text-white fa-3x" aria-hidden="true"></i>
+				</div>
+				<h2>Admission Procedure</h2>
+				<p>The student should complete the age of 3 and 1/2 years on 31st March of the year for the admission to class nursery the age for admission to other classes</p>
+			</div>
+
+			<div class="col-lg-3 col-md-3 col-sm-3 d-block m-auto">
+				<div class="imgsetting d-block m-auto bg-warning">
+					<i class="fa fa-university text-white fa-3x" aria-hidden="true"></i>
+				</div>
+				<h2>Rules & Regulations</h2>
+				<p>Leave to a student for absence is granted only on an I application to The principal, through class Teacher Submitted in Time definitely the same day,</p>
+			</div>
+
+			<div class="col-lg-3 col-md-3 col-sm-3 d-block m-auto">
+				<div class="imgsetting d-block m-auto bg-warning">
+					<i class="fa fa-child text-white fa-3x" aria-hidden="true"></i>
+				</div>
+				<h2>Aim of the school</h2>
+				<p>The main aim of the school is to provide comprehensive educational manner ofspeaking system to impart impulse to the student's physical growth</p>
+			</div>
+
+			<div class="col-lg-3 col-md-3 col-sm-3 d-block m-auto">
+				<div class="imgsetting d-block m-auto bg-warning">
+					<i class="fa fa-grav text-white fa-3x" aria-hidden="true"></i>
+				</div>
+				<h2>School Activities</h2>
+				<p>Children are inquisitive by nature. They are extremely curious lot, always eager to know about everything around them, therefore besides academics,</p>
+			</div>
+		</div>
+	</section>
+
+
+
+		<!-- Start Login page  -->
+<div id="id01" class="modal">
+  <form class="modal-content animate" action="hotelsignup.php" method="post">
+    <div class="imgcontainer">
+	  <h2> Login</h2>
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container2">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit" class="btn32">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container2" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn btn32">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<!-- End Login page  -->
+
+
+
+<!-- Start Singup page  -->
+
+<div id="id02" class="modal">
+  <form class="modal-content animate" action="hotelsignup.php" method="post">
+  <div class="imgcontainer">
+	  <h2>Sign Up</h2>
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+    <div class="container2">
+       <label for="Name"><b>Name</b></label>
+      <input type="text" placeholder="Enter Name" name="name" required>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn1 btn32">Cancel</button>
+        <button type="submit"  class="btn32 signupbtn1">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+<!-- End Singup page  -->
+
+<div class="Transfer">
+  <div class="container">
+    <div class="alert alert-info bg-dark text-white" role="alert">Transfer Certificate</div>
+    <div class="comb d-flex">
+      <img src="{%static "images/notice.jpg"%}" alt="">
+
+<div class="jumbotron jumbo">
+  <h3>Result of Entrance Examination [Date]
+</h3>
+  <h4>Pass Candidate list
+</h4>
+  <p>Class-Semi-1
+</p>
+</div>
+
+    </div>
+  </div>
+
+</div>
+
+
+{%  include 'pages/footer.html' %}
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,210 @@
+/* Extra styles for the cancel button */
+
+.modal input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+.container2 {
+  padding: 16px;
+}
+
+
+.btn32 {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn32:hover {
+  opacity: 0.8;
+}
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.modal-content-hotel {
+  background-color: #fefefe;
+  margin: 2% auto 2% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 90%; /* Could be more or less, depending on screen size */
+}
+.hotel-cotent
+{
+width: 100%;
+  height: 430px;
+  overflow: auto;
+}
+.info-hotel{
+  text-align: center;
+  margin: 10px 10px;
+  border-style: solid;
+  border-width: 1px;
+  position: relative;
+  width: 45%; /* Full width */
+  height: 45%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  float:left;
+}
+
+.hotel-img{
+  position: relative;
+  width: 50%; /* Full width */
+  height: 79%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  float:left;
+}
+.hotel-info{
+  text-align: left;
+  padding-left: 10px;
+  overflow: auto; /* Enable scroll if needed */
+}
+
+.btn-cust{
+float:right;
+margin: 0px 10px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+
+
+.cancelbtn1{
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn1, .signupbtn1 {
+  float: left;
+  width: 50%;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn1, .signupbtn1 {
+     width: 100%;
+  }
+}
+
+
+
+/* -----------------contactus form----------------------*/
+.formm{
+  border: 1px solid grey;
+  width: 700px;
+  height: 600px;
+  background-color: #f2f2f2;
+}
+.roww
+{
+  width: 700px;
+}
+.adrr{
+  width: 300px;
+  height:600px;
+
+}
+.comb img{
+  height: 300px;
+}
+.col{
+  border-right: none;
+}

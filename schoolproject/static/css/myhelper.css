@@ -1,0 +1,255 @@
+{% load static%}
+
+
+
+.hearderset h2{
+	font-size: 82px;
+	font-weight: bold;
+}
+/*--------------css for ourservices-------------*/
+
+
+.ourservice h1{
+	font-weight: bold;
+	font-size: 50px;
+}
+
+.rowsetting{
+	margin-top:80px;
+}
+.imgsetting{
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;
+}
+.fa-graduation-cap{
+margin-top: 20px;
+}
+.fa-university{
+margin-top: 20px;
+}
+.fa-child{
+	margin-top: 20px;
+
+}
+.fa-grav{
+margin-top: 20px;
+}
+.rowsetting h2{
+	margin-top: 20px;
+	font-weight: bold;
+	font-size: 30px;
+}
+.rowsetting p{
+	padding: 10px;
+	color: #6c757d!important
+}
+/*--------------------portfolio------------*/
+.portfolio{
+	height: 500px;
+	width: 100%;
+	padding: 50px 0px 50px 0px;
+}
+.m2 a{
+	color: black;
+}
+.m1{
+	margin-right: 20px;
+	padding: 10px;
+
+}
+.m1 p{
+	color: #6c757d!important
+}
+.m2{
+	margin-bottom:20px;
+	padding: 10px;
+	margin-left: 5px;
+}
+.m2 a:hover{
+	color: #4bcffa;
+}
+.mynav{
+	height:10vh;
+}
+.bt2{margin-left:3px;
+	}
+	.collapse.navbar-collapse ul li {
+		margin-right: 15px;
+		border-right: 1px solid #d5dfdf;
+
+
+	}
+	 .collapse.navbar-collapse ul li a{
+		font-family: 'Lato', sans-serif;
+
+		font-size:13px;
+		color: #fff;
+		padding: 12px 20px 10px 20px;
+		margin-top: 4px;
+		margin-right: 10px;
+
+	}
+
+
+.flex-caption {
+  width: 96%;
+  padding: 2%;
+  left: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.5);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+  font-size: 14px;
+  line-height: 18px;
+}
+li.css a {
+  border-radius: 0;
+}
+
+/*---owl-carousel-------*/
+.testimonial-area
+{
+	padding: 50px 0;
+	position: relative;
+	background-image: url("/static/images/wood.jpg");
+	-webkit-background-size:cover;
+	background-size: cover;
+	background-position: center center; 
+	background-repeat: no-repeat; 
+}
+.testimonial-area:before {
+	position:absolute;
+	content: '';
+	background:rgba(0,0,0,0.7);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.single-testimonial{
+	color: #fff;
+	padding-left: 75px;
+	position:relative;
+	margin: 0 15px 15px;
+}
+.img-area{
+	border-radius: 50%;
+	height: 150px;
+	left: 0;
+	margin-top: -75px;
+	position: absolute;
+	top:50%;
+}
+.testi-text{
+	background: #FFFF4A;
+	padding: 40px 20px 40px 100px;
+	color: #262626;
+}
+.img-area > img{
+	background: linear-gradient(to bottom,darkcyan,white);
+	border-radius: 50%;
+	padding:5px;
+}
+.testi-text h4{
+	font-size: 30px;
+	margin-bottom: 30px;
+	font-family: Shrikhand;
+}
+.testi-text h4 span{
+	display: block;
+	font-size: 14px;
+}
+.testi-text p{
+	font-size: 18px;
+	line-height:25px;
+	font-family: Courgette;
+}
+.single-testimonial:hover .testi-text{
+background: #fff;
+transition: 0.9s;
+}
+.testimonial-area div.owl-nav{
+	color: #FFFF4A;
+	display: inline-block;
+	font-size: 55px;
+	height: 50px;
+	margin-top: -30px;
+	text-align: center;
+	width: 40px;
+	transition: 0.3s;
+}
+
+.owl-prev, .owl-next{
+	position: absolute;
+}
+.owl-prev{
+	left: -20px;
+	top: 100px;
+}
+.owl-next{
+	right: -20px;
+	top: 100px;
+}
+/* responsive css*/
+@media only screen and (max-width: 767px)
+{
+	.testimonial-area{
+		padding: 15px 0;
+
+	}
+	.single-testimonial{
+		padding-left: 0;
+		padding-top: 75px;
+	}
+	.img-area{
+		left: 50%;
+		margin-left: -75px;
+		top: 75px;
+	}
+	.testi-text{
+		padding: 80px 25px 25px;
+
+	}
+	.testi-text h4{
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+	.testi-text p{
+		font-size: 16px;
+	}
+	.owl-prev{
+		left: -15px;
+		top: 150px;
+	}
+	.owl-next{
+		right: -15px;
+		top: 150px;
+	}
+	/* responsive nav*/
+
+
+}
+.img-area{
+	height: 150px;
+	width: 150px;
+}
+.portfolio{
+	margin-top: 200px;
+}
+.logoimg{
+	height: 50px;
+	width: 100px;
+}
+.Transfer{
+	margin-top: 200px;
+}
+/*make responsive paragraph*/
+
+
+@media screen and (max-width: 600px) {
+  .m1 {
+    font-size: 10px;
+  }
+}
